@@ -1,0 +1,4 @@
+SELECT czas, kiernuek, nur_rejsu, status_lotu FROM `przyloty` ORDER BY czas ASC;
+SELECT * FROM `przyloty`WHERE czas BETWEEN '10:00' AND '10:59';
+SELECT nr_rejsu, samoloty.typ FROM `przyloty`JOIN samoloty ON samoloty_id = samoloty.id;
+UPDATE `odloty` SET `status_lotu` = 'opoznienie 20 min' WHERE `odloty`.`id` = 5;;
